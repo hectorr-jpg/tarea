@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Powerball - Calculadora de Combinaciones</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Powerball Lottery</h1>
+            <p class="description">
+                Calcula el número total de combinaciones posibles en el juego Powerball.
+            </p>
+            
+            <div class="formula">
+                <p>C(59,5) × C(35,1)</p>
+            </div>
+
+            <form id="powerballForm">
+                <div class="input-group">
+                    <label for="numeros">Números principales (1-59):</label>
+                    <input type="number" id="numeros" value="59" readonly disabled>
+                    <label for="elegidos">Elegir:</label>
+                    <input type="number" id="elegidos" value="5" readonly disabled>
+                </div>
+
+                <div class="input-group">
+                    <label for="powerballNumeros">Powerball (1-35):</label>
+                    <input type="number" id="powerballNumeros" value="35" readonly disabled>
+                    <label for="powerballElegidos">Elegir:</label>
+                    <input type="number" id="powerballElegidos" value="1" readonly disabled>
+                </div>
+
+                <button type="button" id="calcularBtn">Calcular combinaciones</button>
+            </form>
+
+            <div id="resultado" class="resultado">
+                <p>Haz clic en el botón para ver el resultado</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/java.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e8e0f5;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #6b4c9a;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.description {
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.formula {
+    background: #f3edff;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.formula p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6b4c9a;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    background: #f9f7ff;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.input-group label {
+    font-weight: 500;
+    color: #6b4c9a;
+    font-size: 14px;
+}
+
+.input-group input {
+    width: 70px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 15px;
+    text-align: center;
+    background: white;
+}
+
+.input-group input:read-only {
+    background: #f0ecf9;
+}
+
+button {
+    width: 100%;
+    background: #9b7bcb;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #7d5da8;
+}
+
+.resultado {
+    background: #f9f7ff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid #e0d6f0;
+}
+
+.resultado p {
+    color: #6b4c9a;
+    font-size: 14px;
+}
+
+.resultado .numero {
+    font-size: 28px;
+    font-weight: bold;
+    color: #9b7bcb;
+    margin-top: 10px;
+}
+
+.resultado .detalle {
+    font-size: 12px;
+    color: #999;
+    margin-top: 12px;
+}
